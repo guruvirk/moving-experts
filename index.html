@@ -17,7 +17,7 @@
 
     <!-- CSS Libraries -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link href="lib/flaticon/font/flaticon.css" rel="stylesheet">
     <link href="lib/animate/animate.min.css" rel="stylesheet">
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
@@ -39,7 +39,7 @@
                         <div class="logo">
                             <a href="index.html">
                                 <!-- <h1>Builderz</h1> -->
-                                <img src="img/logo-me-blue.png" alt="Logo">
+                                <img src="img/logo.png" alt="Logo">
                             </a>
                         </div>
                     </div>
@@ -891,22 +891,27 @@
                             <form name="sentMessage" id="contactForm" onsubmit="return false;">
                                 <div class="row">
                                     <div class="control-group col-md-12 col-lg-12">
-                                        <input type="text" class="form-control" id="name" placeholder="Your Full Name*"
-                                            required="required" />
+                                        <i class="fa-solid fa-square-user icon"></i>
+                                        <i class="fa-solid fa-user icon"></i>
+                                        <input style="padding-left: 40px;" type="text" class="form-control" id="name"
+                                            placeholder="Your Full Name*" required="required" />
                                         <p id="nameError" class="help-block text-danger"></p>
                                     </div>
                                     <div class="control-group col-md-6 col-lg-6">
-                                        <input type="email" class="form-control" id="email" placeholder="Your Email*"
+                                        <i class="fa-solid fa-envelope icon"></i>
+                                        <input style="padding-left: 40px;" type="email" class="form-control" id="email" placeholder="Your Email*"
                                             required="required" />
                                         <p id="emailError" class="help-block text-danger"></p>
                                     </div>
                                     <div class="control-group col-md-6 col-lg-6">
-                                        <input type="text" pattern="[1-9]{1}[0-9]{9}" class="form-control" id="phone"
+                                        <i class="fa-solid fa-square-phone icon"></i>
+                                        <input style="padding-left: 40px;" type="text" pattern="[1-9]{1}[0-9]{9}" class="form-control" id="phone"
                                             placeholder="Your Phone Number*" required="required" />
                                         <p id="phoneError" class="help-block text-danger"></p>
                                     </div>
                                     <div class="control-group col-md-6 col-lg-6">
-                                        <select class="form-control" id="size" name="size">
+                                        <i class="fa-sharp fa-solid fa-people-carry-box icon"></i>
+                                        <select style="padding-left: 40px;" class="form-control" id="size" name="size">
                                             <option value="" disabled selected>Size of Move*</option>
                                             <option value="volvo">Single Item</option>
                                             <option value="saab">1 Bedroom</option>
@@ -919,29 +924,33 @@
                                         <p id="sizeError" class="help-block text-danger"></p>
                                     </div>
                                     <div class="control-group col-md-6 col-lg-6">
-                                        <input type="text" class="form-control" onkeydown="return false"
+                                        <i class="fa-solid fa-calendar-days icon"></i>
+                                        <input style="padding-left: 40px;" type="text" class="form-control" onkeydown="return false"
                                             onfocus="datepickerFocus()" onblur="(this.type='text')" id="date"
                                             placeholder="Date*" required="required" />
                                         <p id="dateError" class="help-block text-danger"></p>
                                     </div>
                                     <div class="control-group col-md-12 col-lg-12">
-                                        <input type="text" id="pickup" class="form-control"
+                                        <i class="fa-solid fa-truck-pickup icon"></i>
+                                        <input style="padding-left: 40px;" type="text" id="pickup" class="form-control"
                                             placeholder="PickUp Address*" required="required" />
                                         <p id="pickUpError" class="help-block text-danger"></p>
                                     </div>
                                     <div class="control-group col-md-12 col-lg-12">
-                                        <input type="text" id="delivery" class="form-control"
+                                        <i class="fa-solid fa-truck-ramp-box icon"></i>
+                                        <input style="padding-left: 40px;" type="text" id="delivery" class="form-control"
                                             placeholder="Delivery Address*" required="required" />
                                         <p id="deliveryError" class="help-block text-danger"></p>
                                     </div>
                                     <div class="control-group col-md-12 col-lg-12">
-                                        <textarea class="form-control" id="notes"
+                                        <i class="fa-solid fa-clipboard icon"></i>
+                                        <textarea style="padding-left: 40px;" class="form-control" id="notes"
                                             placeholder="Additional Notes"></textarea>
                                         <p class="help-block text-danger"></p>
                                     </div>
                                     <div style="text-align: center;" class="col-md-12 col-lg-12">
                                         <button class="btn submitButtont" onclick="validateForm()" type="submit"
-                                            id="sendMessageButton">Send Message</button>
+                                            id="sendMessageButton">Send Quote</button>
                                     </div>
                                 </div>
                             </form>
