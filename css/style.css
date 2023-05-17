@@ -319,6 +319,11 @@ input::placeholder {
     color: #495057 !important;
 }
 
+input[type="date"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
 
 /*******************************/
 /******** Carousel CSS *********/
