@@ -314,6 +314,14 @@ input[type="date"]:not(.has-value):before {
     content: attr(placeholder);
 } */
 
+input[type="date"]
+{
+    display:block;
+    -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+    min-height: 1.2em;
+}
+
 input::placeholder {
     color: #495057 !important;
 }
