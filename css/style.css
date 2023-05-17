@@ -295,6 +295,8 @@ a:focus {
 input#date {
     display: inline-block;
     position: relative;
+    -webkit-appearance: none;
+    -moz-appearance: none;
 }
 
 input[type="date"]::-webkit-calendar-picker-indicator {
@@ -317,11 +319,6 @@ input[type="date"]:not(.has-value):before {
 
 input::placeholder {
     color: #495057 !important;
-}
-
-input[type="date"] {
-    -webkit-appearance: none;
-    -moz-appearance: none;
 }
 
 
