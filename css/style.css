@@ -310,6 +310,11 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     width: auto;
 }
 
+input[type="date"]:not(.has-value):before {
+    color: black;
+    content: attr(placeholder);
+}
+
 /*******************************/
 /******** Carousel CSS *********/
 /*******************************/
@@ -576,14 +581,19 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 .feature .feature-icon {
-    position: relative;
+    color: #bede33;
+    /* position: relative;
     width: 60px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
 }
 
-.feature .feature-icon::before {
+.feature .feature-icon-dark {
+    color: #030f27;
+}
+
+/* .feature .feature-icon::before {
     position: absolute;
     content: "";
     width: 80px;
@@ -605,7 +615,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     background: #030f27;
     border-radius: 60px;
     z-index: 2;
-}
+} */
 
 .feature .col-md-12:nth-child(2n) .feature-icon::after {
     background: #bede33;
@@ -714,6 +724,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 .fact .fact-icon {
+    height: 100%;
     position: relative;
     margin: 7px 15px 0 15px;
     width: 60px;
