@@ -311,9 +311,14 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 input[type="date"]:not(.has-value):before {
-    color: black;
+    color: #495057;
     content: attr(placeholder);
 }
+
+input::placeholder {
+    color: #495057 !important;
+}
+
 
 /*******************************/
 /******** Carousel CSS *********/
