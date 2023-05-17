@@ -293,10 +293,7 @@ a:focus {
 }
 
 input#date {
-    display: inline-block;
-    position: relative;
-    -webkit-appearance: none;
-    -moz-appearance: none;
+    display: -webkit-inline-flex !important;
 }
 
 input[type="date"]::-webkit-calendar-picker-indicator {
