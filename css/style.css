@@ -292,38 +292,13 @@ a:focus {
     font-weight: bold;
 }
 
-/* input#date {
-    display: -webkit-inline-flex !important;
-}
-
-input[type="date"]::-webkit-calendar-picker-indicator {
-    background: transparent;
-    bottom: 0;
-    color: transparent;
-    cursor: pointer;
-    height: auto;
-    left: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: auto;
-}
-
-input[type="date"]:not(.has-value):before {
-    color: #495057;
-    content: attr(placeholder);
-} */
-
-input[type="date"]
-{
-    display:block;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    min-height: 1.2em;
-}
-
 input::placeholder {
     color: #495057 !important;
+}
+
+select{
+    -webkit-appearance: none !important;
+    padding-left: 40px!important;
 }
 
 
