@@ -292,7 +292,7 @@ a:focus {
     font-weight: bold;
 }
 
-input#date {
+/* input#date {
     display: -webkit-inline-flex !important;
 }
 
@@ -312,7 +312,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 input[type="date"]:not(.has-value):before {
     color: #495057;
     content: attr(placeholder);
-}
+} */
 
 input::placeholder {
     color: #495057 !important;
